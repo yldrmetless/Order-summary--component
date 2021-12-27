@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+:root{
+    --card-bg:hsl(225,100%,98%);
+    --pay:hsl(224,23%,55%);
+    --dark-blue:hsl(223, 47%, 23%);
+    --bg:hsl(225, 100%, 94%);
+    --brg:hsl(245, 75%, 52%);
+}
+
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: contain;
+    background-color: var(--bg);
+    position: relative;
+   
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    max-width: 450px;
+    max-height: 90%;
+    
+}
+
+.card{
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 25px;
+  
+}
+
+.card_title{
+    padding: 7%;
+    text-align: center;
+    
+}
+
+
+
+.card_title p{
+    color: #8a8a8a;
+}
+
+.card-title{
+    display: block;
+    
+}
+
+.card-title a{
+    color: var(--dark-blue);
+    font-weight: 900;
+    transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -ms-transition: color .5s ease;
+    -o-transition: color .5s ease;
+}
+
+.card-title a:hover{
+    text-decoration: none;
+    color: var(--brg);
+   
+}
+
+#card_left{
+    padding: 7%;
+
+}
+
+
+#card_right{
+    padding: 7%;
+}
+
+#pay{
+    padding: 7%;
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: var(--brg);
+    padding: 20px 0;
+    border-radius: 12px;
+    margin: 30px 40px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    font-weight: 900;
+}
+
+#pay:hover{
+    background-color: var(--pay);
+    
+}
+
+#cancel{
+    padding: 7%;
+    text-align: center;
+    display: block;
+    color: rgb(46, 39, 39);
+    text-decoration: none;
+    background-color: transparent;
+    padding: 20px 0;
+    margin: 30px 40px;
+    font-weight: 900;
+}
+
+#cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+h1{
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.card_des{
+    background: var(--card-bg);
+    border-radius: 12px;
+    display: flex;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_des a{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    transition: color 3s ease;
+    -webkit-transition: color 3s ease;
+    -moz-transition: color 3s ease;
+    -ms-transition: color 3s ease;
+    -o-transition: color 3s ease;
+}
+
+
+#card_left{
+    display: flex;
+    align-items: center;
+}
+
+
+#card_right{
+    display: flex;
+    align-items: center;
+}
+
+#card_left div{
+    margin-left: 20px;
+}
+
+#card_left div h5{
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--dark-blue);
+}
+
+#card_left div p{
+    font-size: 14px;
+    color: #8a8a8a;
+    
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 87%;
+    }
+
+    .title {
+        font-size: 23px;
+    }
+
+    div.card-des {
+        padding: 12px;
+    }
+
+    #card_left div {
+        margin-left: 10px;
+    }
+
+    a#prc,
+    a#cancel,
+    .card_des a {
+        font-size: 13px;
+    }
+
+    .card_title {
+        padding: 9% 7%;
+    }
+}
+
+
+
+
